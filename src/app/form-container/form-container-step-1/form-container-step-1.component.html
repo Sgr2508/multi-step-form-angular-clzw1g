@@ -1,0 +1,29 @@
+<div [formGroup]="form">
+  <div>
+    <label>Nome Completo</label>
+    <input formControlName="firstName" />
+  </div>
+  <div>
+    <label>CPF</label>
+    <input formControlName="lastName" />
+  </div>
+  <div>
+    <label>Data de Nascimento</label>
+    <input formControlName="birthDate" />
+  </div>
+  <div>
+  <p>Sexo<input type="checkbox" name="sexo" value="M"> M
+    <input type="checkbox" name="sexo" value="F"> F </p>
+</div>
+
+<div>
+<p> Estado Civil: <select id="Estado Civil" name="Estado Civil">
+<option value="Solteiro">Solteiro</option>
+<option value="Casado">Casado</option>
+<option value="Viúvo">Viuvo</option>
+<option value="Divorciado">Divorciado</option> 
+</select> </p>
+</div>
+
+  <button routerLink="../step-2">Próximo</button>
+</div>

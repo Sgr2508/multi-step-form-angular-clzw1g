@@ -1,0 +1,77 @@
+<div [formGroup]="form">
+  
+<div>
+<label>E-mail</label>
+<input formControlName="e-mail" />
+</div>
+
+<div>
+<label>Web Site</label>
+<input formControlName="web site" />
+</div>
+
+<div>
+  <label>Endereço</label>
+  <input formControlName="address" />
+</div>
+
+<div>
+<label>Bairro</label>
+<input formControlName="neighborhood" />
+</div>
+
+
+<div>
+  <label>Cidade</label>
+  <input formControlName="country" />
+</div>
+
+<div>
+<p>UF
+<select>
+<option value="AC">Acre</option>
+<option value="AL">Alagoas</option>
+<option value="AP">Amapa</option>
+<option value="AM">Amazonas</option>
+<option value="BA">Bahia</option>
+<option value="CE">Ceara</option>
+<option value="DF">Distrito Federal</option>
+<option value="ES">Espirito Santo</option>
+<option value="GO">Goias</option>
+<option value="MA">Maranhao</option>
+<option value="MT">Mato Grosso</option>
+<option value="MS">Mato Grosso do Sul</option>
+<option value="MG">Minas Gerais</option>
+<option value="PA">Para</option>
+<option value="PB">Paraiba</option>
+<option value="PR">Parana</option>
+<option value="PE">Pernambuco</option>
+<option value="PI">Piaui</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="RN">Rio Grande do Norte</option>
+<option value="RS">Rio Grande do Sul</option>
+<option value="RO">Rondonia</option>
+<option value="RR">Roraima</option>
+<option value="SC">Santa Catarina</option>
+<option value="SP">Sao Paulo</option>
+<option value="SE">Sergipe</option>
+<option value="TO">Tocantins</option>
+<option value="EX">Estrangeiro</option>
+</select> </p>
+</div>
+
+<div>
+<label>Telefone</label>
+<input formControlName="telephone" />
+</div>
+
+<div>
+<label>Celular</label>
+<input formControlName="cell phone" />
+</div>
+
+<div class="btns">
+  <button routerLink="../step-2">Voltar</button>
+  <button (click)="submit()">Enviar</button>
+</div>
+</div>
